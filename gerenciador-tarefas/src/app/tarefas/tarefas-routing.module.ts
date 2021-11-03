@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { ListarTarefaComponent } from './';
+import { ListarTarefaComponent } from './listar';
 
 export const TarefaRoutes: Routes = [
     {

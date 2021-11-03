@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TarefaService, Tarefa } from '../shared';
+import { Tarefa, TarefaService } from '../shared';
 
 @Component({
   selector: 'app-listar-tarefa',
@@ -13,7 +13,7 @@ export class ListarTarefaComponent implements OnInit {
   constructor(private tarefaService: TarefaService) { }
 
   ngOnInit(): void {
-    //this.tarefas = this.tarefaService.listarTodas()
+    this.tarefas = this.tarefaService.listarTodas()
   }
 
   /*removerTarefa($event: any, tarefa: Tarefa): void{
