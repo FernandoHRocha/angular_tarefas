@@ -1,4 +1,5 @@
 export * from './tarefas.module'
-export * from './shared'
-export * from './listar/listar-tarefa.component'
 export * from './tarefas-routing.module'
+export * from './listar'
+export * from './cadastrar'
+export * from './editar'
