@@ -28,4 +28,11 @@ export class ListarTarefaComponent implements OnInit {
     }
   }
 
+  alterarStatus(tarefa:Tarefa): void{
+    if(confirm('Deseja alterar o estado da tarefa "'+tarefa.nome+"' ?")){
+      this.tarefaService.alterarStatusTarefa(tarefa.id)
+      this.tarefas = this.listarTodas()
+    }
+  }
+
 }
